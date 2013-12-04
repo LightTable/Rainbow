@@ -1,0 +1,7 @@
+{:+ {:app [(:lt.objs.plugins/load-js "rainbow_compiled.js" true)]
+     :editor.behaviors [:lt.plugins.rainbow/rainbow-parens]
+     :editor.keymap [:lt.plugins.rainbows/rainbow-parens]
+     :editor.clj [:lt.plugins.rainbows/rainbow-parens]
+     :editor.cljs [:lt.plugins.rainbows/rainbow-parens]
+     :editor.clj.instarepl [:lt.plugins.rainbows/rainbow-parens]
+     }}
