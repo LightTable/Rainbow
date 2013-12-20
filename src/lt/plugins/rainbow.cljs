@@ -1,7 +1,8 @@
 (ns lt.plugins.rainbow
   (:require [lt.object :as object]
             [lt.objs.editor :as editor]
-            [lt.objs.command :as cmd]))
+            [lt.objs.command :as cmd])
+  (:require-macros [lt.macros :refer [behavior defui background]]))
 
 (def opposites (js-obj "]" "["
                        "}" "{"
@@ -45,7 +46,7 @@
                                              "rainbow bracket-mismatched"))
                             :else nil)))))}))
 
-(object/behavior* ::rainbow-parens
+(behavior ::rainbow-parens
                   :triggers #{:object.instant}
                   :type :user
                   :desc "Editor: Enable rainbow parens"
@@ -61,7 +62,7 @@
                                   (editor/set-mode this rmode)
                                   (object/merge! this {::real-mode mode-name})))))
 
-(object/behavior* ::hide-rainbow-parens
+(behavior ::hide-rainbow-parens
                   :triggers #{:object.instant}
                   :type :user
                   :desc "Editor: Disable rainbow parens"
