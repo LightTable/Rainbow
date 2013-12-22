@@ -7,7 +7,7 @@ goog.require('lt.objs.editor');
 goog.require('lt.object');
 goog.require('lt.object');
 
-lt.plugins.rainbow.opposites = (function (){var obj6261 = {"]":"[","}":"{",")":"("};return obj6261;
+lt.plugins.rainbow.opposites = (function (){var obj8379 = {"]":"[","}":"{",")":"("};return obj8379;
 })();
 
 lt.plugins.rainbow.opens = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, ["(",null,"[",null,"{",null], null), null);
@@ -17,9 +17,9 @@ lt.plugins.rainbow.closes = new cljs.core.PersistentHashSet(null, new cljs.core.
 lt.plugins.rainbow.apeek = (function apeek(a){return (a[(a.length - 1)]);
 });
 
-lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj6265 = {"rainbowstack":[],"mode":null};return obj6265;
-}),new cljs.core.Keyword(null,"token","token",1124445547),(function (stream,state,base){if(!(((function (){var or__4959__auto__ = base.style;if(cljs.core.truth_(or__4959__auto__))
-{return or__4959__auto__;
+lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj8383 = {"rainbowstack":[],"mode":null};return obj8383;
+}),new cljs.core.Keyword(null,"token","token",1124445547),(function (stream,state,base){if(!(((function (){var or__6938__auto__ = base.style;if(cljs.core.truth_(or__6938__auto__))
+{return or__6938__auto__;
 } else
 {return "";
 }
@@ -55,7 +55,7 @@ return ("rainbow bracket" + new cljs.core.Keyword(null,"level","level",111677003
 })], null));
 });
 
-lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.rainbow","rainbow-parens","lt.plugins.rainbow/rainbow-parens",565487828),new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"object.instant","object.instant",773332388),null], null), null),new cljs.core.Keyword(null,"type","type",1017479852),new cljs.core.Keyword(null,"user","user",1017503549),new cljs.core.Keyword(null,"desc","desc",1016984067),"Editor: Enable rainbow parens",new cljs.core.Keyword(null,"exclusive","exclusive",2700522000),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("lt.plugins.rainbow","hide-rainbow-parens","lt.plugins.rainbow/hide-rainbow-parens",2838693055)], null),new cljs.core.Keyword(null,"reaction","reaction",4441361819),(function (this$){var mode_name = lt.objs.editor.option.call(null,this$,new cljs.core.Keyword(null,"mode","mode",1017261333));var mode = lt.objs.editor.__GT_mode.call(null,this$);var rmode = [cljs.core.str(mode_name),cljs.core.str("-rainbow")].join('');if(cljs.core._EQ_.call(null,mode_name.indexOf("-rainbow"),-1))
+lt.plugins.rainbow.__BEH__rainbow_parens = (function __BEH__rainbow_parens(this$){var mode_name = lt.objs.editor.option.call(null,this$,new cljs.core.Keyword(null,"mode","mode",1017261333));var mode = lt.objs.editor.__GT_mode.call(null,this$);var rmode = [cljs.core.str(mode_name),cljs.core.str("-rainbow")].join('');if(cljs.core._EQ_.call(null,mode_name.indexOf("-rainbow"),-1))
 {if(cljs.core.truth_((CodeMirror.modes[rmode])))
 {} else
 {CodeMirror.defineMode(rmode,(function (){return CodeMirror.overlayMode(mode,lt.plugins.rainbow.overlay.call(null,cljs.core.not.call(null,mode.disallowSingleQuoteStrings)),true);
@@ -66,14 +66,16 @@ return lt.object.merge_BANG_.call(null,this$,new cljs.core.PersistentArrayMap(nu
 } else
 {return null;
 }
-}));
+});
+lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.rainbow","rainbow-parens","lt.plugins.rainbow/rainbow-parens",565487828),new cljs.core.Keyword(null,"reaction","reaction",4441361819),lt.plugins.rainbow.__BEH__rainbow_parens,new cljs.core.Keyword(null,"desc","desc",1016984067),"Editor: Enable rainbow parens",new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"object.instant","object.instant",773332388),null], null), null),new cljs.core.Keyword(null,"type","type",1017479852),new cljs.core.Keyword(null,"user","user",1017503549),new cljs.core.Keyword(null,"exclusive","exclusive",2700522000),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("lt.plugins.rainbow","hide-rainbow-parens","lt.plugins.rainbow/hide-rainbow-parens",2838693055)], null));
 
-lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.rainbow","hide-rainbow-parens","lt.plugins.rainbow/hide-rainbow-parens",2838693055),new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"object.instant","object.instant",773332388),null], null), null),new cljs.core.Keyword(null,"type","type",1017479852),new cljs.core.Keyword(null,"user","user",1017503549),new cljs.core.Keyword(null,"desc","desc",1016984067),"Editor: Disable rainbow parens",new cljs.core.Keyword(null,"exclusive","exclusive",2700522000),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("lt.plugins.rainbow","rainbow-parens","lt.plugins.rainbow/rainbow-parens",565487828)], null),new cljs.core.Keyword(null,"reaction","reaction",4441361819),(function (this$){if(cljs.core.truth_(new cljs.core.Keyword("lt.plugins.rainbow","real-mode","lt.plugins.rainbow/real-mode",4711707298).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,this$))))
+lt.plugins.rainbow.__BEH__hide_rainbow_parens = (function __BEH__hide_rainbow_parens(this$){if(cljs.core.truth_(new cljs.core.Keyword("lt.plugins.rainbow","real-mode","lt.plugins.rainbow/real-mode",4711707298).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,this$))))
 {return lt.objs.editor.set_mode.call(null,this$,new cljs.core.Keyword("lt.plugins.rainbow","real-mode","lt.plugins.rainbow/real-mode",4711707298).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,this$)));
 } else
 {return null;
 }
-}));
+});
+lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.rainbow","hide-rainbow-parens","lt.plugins.rainbow/hide-rainbow-parens",2838693055),new cljs.core.Keyword(null,"reaction","reaction",4441361819),lt.plugins.rainbow.__BEH__hide_rainbow_parens,new cljs.core.Keyword(null,"desc","desc",1016984067),"Editor: Disable rainbow parens",new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"object.instant","object.instant",773332388),null], null), null),new cljs.core.Keyword(null,"type","type",1017479852),new cljs.core.Keyword(null,"user","user",1017503549),new cljs.core.Keyword(null,"exclusive","exclusive",2700522000),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("lt.plugins.rainbow","rainbow-parens","lt.plugins.rainbow/rainbow-parens",565487828)], null));
 
 
 //# sourceMappingURL=
