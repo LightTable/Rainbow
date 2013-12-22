@@ -1,7 +1,8 @@
 {
-  "name": "Rainbow",
+  "name": "Rainbow2",
   "author": "Chris Granger",
-  "source": "https://github.com/Kodowa/LightTable-Rainbow",
+  "version": "0.0.3"
+  "source": "https://github.com/LightTable/LightTable-Rainbow",
   "desc": "Rainbow parens implementation for Light Table",
   "behaviors": "rainbow.behaviors"
 }
