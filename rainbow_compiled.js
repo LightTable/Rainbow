@@ -7,7 +7,7 @@ goog.require('lt.objs.editor');
 goog.require('lt.object');
 goog.require('lt.object');
 
-lt.plugins.rainbow.opposites = (function (){var obj8379 = {"]":"[","}":"{",")":"("};return obj8379;
+lt.plugins.rainbow.opposites = (function (){var obj8363 = {"]":"[","}":"{",")":"("};return obj8363;
 })();
 
 lt.plugins.rainbow.opens = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, ["(",null,"[",null,"{",null], null), null);
@@ -17,7 +17,7 @@ lt.plugins.rainbow.closes = new cljs.core.PersistentHashSet(null, new cljs.core.
 lt.plugins.rainbow.apeek = (function apeek(a){return (a[(a.length - 1)]);
 });
 
-lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj8383 = {"rainbowstack":[],"mode":null};return obj8383;
+lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj8367 = {"rainbowstack":[],"mode":null};return obj8367;
 }),new cljs.core.Keyword(null,"token","token",1124445547),(function (stream,state,base){if(!(((function (){var or__6938__auto__ = base.style;if(cljs.core.truth_(or__6938__auto__))
 {return or__6938__auto__;
 } else
