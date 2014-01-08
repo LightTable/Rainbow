@@ -1,3 +1,4 @@
+if(!lt.util.load.provided_QMARK_('lt.plugins.rainbow')) {
 goog.provide('lt.plugins.rainbow');
 goog.require('cljs.core');
 goog.require('lt.objs.command');
@@ -7,7 +8,7 @@ goog.require('lt.objs.editor');
 goog.require('lt.object');
 goog.require('lt.object');
 
-lt.plugins.rainbow.opposites = (function (){var obj8363 = {"]":"[","}":"{",")":"("};return obj8363;
+lt.plugins.rainbow.opposites = (function (){var obj7224 = {"]":"[","}":"{",")":"("};return obj7224;
 })();
 
 lt.plugins.rainbow.opens = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, ["(",null,"[",null,"{",null], null), null);
@@ -17,9 +18,9 @@ lt.plugins.rainbow.closes = new cljs.core.PersistentHashSet(null, new cljs.core.
 lt.plugins.rainbow.apeek = (function apeek(a){return (a[(a.length - 1)]);
 });
 
-lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj8367 = {"rainbowstack":[],"mode":null};return obj8367;
-}),new cljs.core.Keyword(null,"token","token",1124445547),(function (stream,state,base){if(!(((function (){var or__6938__auto__ = base.style;if(cljs.core.truth_(or__6938__auto__))
-{return or__6938__auto__;
+lt.plugins.rainbow.overlay = (function overlay(allow_single_quote_strings){return cljs.core.clj__GT_js.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"startState","startState",3724636353),(function (){var obj7228 = {"rainbowstack":[],"mode":null};return obj7228;
+}),new cljs.core.Keyword(null,"token","token",1124445547),(function (stream,state,base){if(!(((function (){var or__5799__auto__ = base.style;if(cljs.core.truth_(or__5799__auto__))
+{return or__5799__auto__;
 } else
 {return "";
 }
@@ -77,5 +78,6 @@ lt.plugins.rainbow.__BEH__hide_rainbow_parens = (function __BEH__hide_rainbow_pa
 });
 lt.object.behavior_STAR_.call(null,new cljs.core.Keyword("lt.plugins.rainbow","hide-rainbow-parens","lt.plugins.rainbow/hide-rainbow-parens",2838693055),new cljs.core.Keyword(null,"reaction","reaction",4441361819),lt.plugins.rainbow.__BEH__hide_rainbow_parens,new cljs.core.Keyword(null,"desc","desc",1016984067),"Editor: Disable rainbow parens",new cljs.core.Keyword(null,"triggers","triggers",2516997421),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"object.instant","object.instant",773332388),null], null), null),new cljs.core.Keyword(null,"type","type",1017479852),new cljs.core.Keyword(null,"user","user",1017503549),new cljs.core.Keyword(null,"exclusive","exclusive",2700522000),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("lt.plugins.rainbow","rainbow-parens","lt.plugins.rainbow/rainbow-parens",565487828)], null));
 
+}
 
 //# sourceMappingURL=
