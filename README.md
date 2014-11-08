@@ -6,4 +6,4 @@ A CLJS implementation of Rainbow parens for Light Table.
 
 Copyright (C) 2013 Kodowa Inc.
 
-Distributed under the GPLv3, see license.md for the full text.
+Distributed under the MIT license, see license.md for the full text.
