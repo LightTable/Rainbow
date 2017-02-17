@@ -36,13 +36,13 @@
                                                  {:type cur
                                                   :pos (.-pos stream)
                                                   :level level})
-                                          (+ "rainbow bracket" level))
+                                          (str "rainbow bracket" level))
                             (closes cur) (let [prev (-> (.-rainbowstack state)
                                                         (apeek))]
                                            (if (= (:type prev) (aget opposites cur))
                                              (do
                                                (.pop (.-rainbowstack state))
-                                               (+ "rainbow bracket" (:level prev 0)))
+                                               (str "rainbow bracket" (:level prev 0)))
                                              "rainbow bracket-mismatched"))
                             :else nil)))))}))
 
